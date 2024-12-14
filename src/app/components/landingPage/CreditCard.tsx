@@ -32,7 +32,7 @@ const CreditCard = () => {
         </div>
         <div className="w-[1/2] relative h-[560px]">
           <Image
-            src="/assets/star 17.png"
+            src="/assets/star.png"
             width={280}
             height={280}
             alt="star"
@@ -98,7 +98,7 @@ const CreditCard = () => {
             />
           </div>
           <Image
-            src="/assets/star 17.png"
+            src="/assets/star.png"
             width={280}
             height={280}
             alt="star"

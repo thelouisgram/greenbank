@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import NavBar from "./components/landingPage/NavBar";
@@ -10,8 +11,9 @@ import Testimonials from "./components/landingPage/Testimonials";
 import FAQs from "./components/landingPage/FAQs";
 import CTA from "./components/landingPage/CTA";
 import Footer from "./components/landingPage/Footer";
+import { motion } from "motion/react";
 
-const page = () => {
+export default function Page() {
   return (
     <div className="w-full h-full overflow-hidden relative">
       <Footer />
@@ -45,8 +47,7 @@ const page = () => {
         <FAQs />
         <CTA />
       </div>
+      <motion.div />
     </div>
   );
-};
-
-export default page;
+}

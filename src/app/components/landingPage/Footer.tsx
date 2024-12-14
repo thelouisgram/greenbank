@@ -4,7 +4,7 @@ import { footerData } from "../utils/footerData";
 
 const Footer = () => {
   return (
-    <div className="absolute w-full z-[3] bottom-0 h-[371px] bg-darkGreyGreen/10 shadow-lg backdrop-blur-sm ">
+    <footer className="absolute w-full z-[3] bottom-0 h-[371px] bg-darkGreyGreen/10 shadow-lg backdrop-blur-sm ">
       <div className="container w-full lg:px-[100px] pt-20 pb-8 h-full">
         <div className="flex flex-col justify-between h-full w-full ">
           <div className="flex w-full justify-between">
@@ -49,7 +49,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </div>
+    </footer>
   );
 };
 

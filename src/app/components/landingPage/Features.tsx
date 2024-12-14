@@ -1,9 +1,9 @@
-import React from 'react'
+import React from "react";
 import Image from "next/image";
 
 const Features = () => {
   return (
-    <div>
+    <section>
       <h3 className="text-white text-[40px] text-center mb-[64px] font-bold">
         What do we offer?
       </h3>
@@ -53,7 +53,7 @@ const Features = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

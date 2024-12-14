@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 const Testimonials = () => {
   return (
-    <div className="flex w-full justify-between gap-8">
+    <section className="flex w-full justify-between gap-8">
       <div className="py-12 px-6 bg-darkGreyGreen/20 shadow-lg backdrop-blur-sm rounded-[32px] flex flex-col gap-8">
         <div className="w-[56px] aspect-square rounded-full bg-darkGreyGreen flex justify-center items-center">
           <Image src="/assets/66.png" width={24} height={24} alt="66" />
@@ -76,7 +76,7 @@ const Testimonials = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

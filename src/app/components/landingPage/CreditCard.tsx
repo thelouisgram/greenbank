@@ -3,12 +3,13 @@ import Image from "next/image";
 import Transparent from "../cards/Transparent";
 import Green from "../cards/Green";
 import White from "../cards/White";
+import { motion } from "motion/react";
 
 const CreditCard = () => {
   return (
-    <div className="w-full h-full">
+    <section className="w-full h-full">
       <div className="w-full container relative flex justify-center">
-        <div className="z-[-1] absolute w-[800px] h-[1000px] rounded-full bg-gradient-to-r from-[#2BB32A] to-transparent blur-3xl opacity-40 -top-40 -right-[35%]"></div>
+        <div className="z-[-4] absolute w-[800px] h-[1000px] rounded-full bg-gradient-to-r from-[#2BB32A] to-transparent blur-3xl opacity-40 -top-40 -right-[35%]"></div>
       </div>
       <div className="w-full h-full flex justify-between items-center mb-[128px]">
         <div className="flex flex-col gap-6">
@@ -38,39 +39,40 @@ const CreditCard = () => {
             alt="star"
             className="absolute right-[350px] top-[200px]"
           />
-          <div className="w-[435px] h-auto transform -skew-x-[20deg] ">
+          <motion.div
+            initial={{ x: 0, skewX: -20 }}
+            animate={{ x: 0, skewX: -20 }}
+            transition={{ duration: 0.5, ease: "easeInOut" }}
+            className="w-[435px] h-auto transform z-10"
+          >
             <Transparent
               containerWidth="435px"
-              padding="py-7 px-8"
-              textH3Size="23px"
-              textH3Leading="27.5px"
-              textH5Size="14px"
-              textPSize="13.74px"
-              textH6Size="18px"
             />
-          </div>
-          <div className="w-[435px] h-auto transform -skew-x-[20deg] top-[125px] -right-[7px] absolute z-[-1]">
+          </motion.div>
+
+          {/* Middle Card (Layered with the top card) */}
+          <motion.div
+            initial={{ y: -125, skewX: -20 }}
+            whileInView={{ y: 0, skewX: -20 }}
+            transition={{ duration: 0.5, ease: "easeInOut" }}
+            className="w-[435px] h-auto transform absolute -z-[2] top-[125px] -right-[14px] "
+          >
             <Green
               containerWidth="435px"
-              padding="py-7 px-8"
-              textH3Size="23px"
-              textH3Leading="27.5px"
-              textH5Size="14px"
-              textPSize="13.74px"
-              textH6Size="18px"
             />
-          </div>
-          <div className="w-[450px] h-auto transform -skew-x-[20deg] top-[245px] -right-[14px] absolute z-[-2]">
+          </motion.div>
+
+          {/* Bottom Card (Layered with the other two) */}
+          <motion.div
+            initial={{ y: -245, skewX: -20 }}
+            whileInView={{ y: 0, skewX: -20 }}
+            transition={{ duration: 0.5, ease: "easeInOut" }}
+            className="w-[450px] h-auto transform absolute z-[-3] top-[245px] -right-[28px] "
+          >
             <White
               containerWidth="435px"
-              padding="py-7 px-8"
-              textH3Size="23px"
-              textH3Leading="27.5px"
-              textH5Size="14px"
-              textPSize="13.74px"
-              textH6Size="18px"
             />
-          </div>
+          </motion.div>
         </div>
       </div>
       <div className="w-full flex justify-between items-center">
@@ -78,25 +80,18 @@ const CreditCard = () => {
           <div className="w-[412px] h-auto ">
             <Transparent
               containerWidth="412px"
-              padding="py-7 px-8"
-              textH3Size="23px"
-              textH3Leading="27.5px"
-              textH5Size="14px"
-              textPSize="13.74px"
-              textH6Size="18px"
             />
           </div>
-          <div className="w-[412px] h-auto absolute z-[-1] transform skew-y-[16deg] top-48 left-0">
+          <motion.div
+            initial={{ x: 0, skewX: 0 }}
+            whileInView={{ y: 0, skewX: 16 }}
+            transition={{ duration: 0.5, ease: "easeInOut" }}
+            className="w-[412px] h-auto absolute z-[-1] transform skew-y-[16deg] top-48 left-0"
+          >
             <Green
               containerWidth="412px"
-              padding="py-7 px-8"
-              textH3Size="23px"
-              textH3Leading="27.5px"
-              textH5Size="14px"
-              textPSize="13.74px"
-              textH6Size="18px"
             />
-          </div>
+          </motion.div>
           <Image
             src="/assets/star.png"
             width={280}
@@ -122,7 +117,7 @@ const CreditCard = () => {
           </button>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

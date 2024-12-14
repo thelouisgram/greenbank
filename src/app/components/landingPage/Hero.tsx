@@ -1,19 +1,49 @@
-import Image from 'next/image';
-import React from 'react'
-import Transparent from '../cards/Transparent';
+import Image from "next/image";
+import React from "react";
+import Transparent from "../cards/Transparent";
+import { motion } from "motion/react";
 
 const Hero = () => {
   return (
-    <div className="flex w-full justify-between md:min-h-[540px]">
+    <section className="flex w-full justify-between md:min-h-[540px]">
       <div className=" flex flex-col gap-8 w-[1/2]">
-        <h1 className="text-[56px] font-bold leading-[64px] -tracking-[2.5%]">
+        <motion.h1
+          initial={{ y: 20, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{
+            ease: "easeInOut",
+            duration: 0.25,
+          }}
+          className="text-[56px] font-bold leading-[64px] -tracking-[2.5%]"
+        >
           Discover the Perfect <br /> Credit Card for You
-        </h1>
-        <p className="w-[498px] text-[18px] leading-6 ">
+        </motion.h1>
+        <motion.p
+          initial={{ y: 20, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{
+            ease: "easeInOut",
+            duration: 0.25,
+            delay: 0.25,
+          }}
+          className="w-[498px] text-[18px] leading-6 "
+        >
           Discover the power of our secure and rewarding credit cards. Explore
           our range of credit cards and take control of your finances today.
-        </p>
-        <button className="bg-baseGreen rounded-[64px] w-[195.5px] px-8 py-4 text-[16px] flex gap-4 justify-center h-[56px] items-center">
+        </motion.p>
+        <motion.button
+          initial={{ y: 20, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{
+            ease: "easeInOut",
+            duration: 0.25,
+            delay: 0.5,
+          }}
+          className="bg-baseGreen rounded-[64px] w-[195.5px] px-8 py-4 text-[16px] flex gap-4 justify-center h-[56px] items-center"
+        >
           <p>Get Started</p>{" "}
           <Image
             src="/assets/arrow-right.png"
@@ -21,8 +51,18 @@ const Hero = () => {
             height={16.5}
             alt="arrow-right"
           />
-        </button>
-        <div className="flex w-full gap-4 h-auto">
+        </motion.button>
+        <motion.div
+          initial={{ y: 20, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{
+            ease: "easeInOut",
+            duration: 0.25,
+            delay: 0.75,
+          }}
+          className="flex w-full gap-4 h-auto"
+        >
           <Image
             src="/assets/people.png"
             alt="people"
@@ -37,27 +77,47 @@ const Hero = () => {
               worlds
             </p>
           </div>
-        </div>
+        </motion.div>
       </div>
       <div className="relative h-auto w-[1/2]">
         <div className="relative">
-          <div className="rotate-[15deg] w-[500px] pt-10">
+          <motion.div
+            initial={{ x: 20, rotate: 0, opacity: 0 }}
+            whileInView={{ x: 0, rotate: 15, opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{
+              ease: "easeInOut",
+              duration: 0.25,
+            }}
+            className="w-[500px] pt-10"
+          >
             <Transparent
               containerWidth="500px"
-              padding="py-10 pl-14 pr-14"
-              textH3Size="32px"
-              textH3Leading="32px"
-              textH5Size="14px"
-              textPSize="12px"
-              textH6Size="18px"
-              cardType= 'hero'
+              cardType="hero"
             />
-          </div>
+          </motion.div>
         </div>
-        <div className="w-[500px] h-[500px] bg-baseGreen rounded-full -right-[225px] absolute top-0 z-[-1]" />
+        <motion.div
+          initial={{
+            width: "0px",
+            height: "0px",
+            borderRadius: "50%",
+            y: 0,
+            right: "-225px",
+          }}
+          animate={{
+            width: "500px",
+            height: "500px",
+          }}
+          transition={{
+            duration: 0.5,
+            ease: "easeInOut",
+          }}
+          className="bg-baseGreen absolute top-0 -right-[225px] z-[-1]"
+        />
       </div>
-    </div>
+    </section>
   );
-}
+};
 
-export default Hero
+export default Hero;

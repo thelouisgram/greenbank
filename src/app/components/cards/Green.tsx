@@ -1,10 +1,9 @@
-import React from "react";
-import Image from "next/image";
+import React from 'react';
+import Image from 'next/image';
 
 // Define the types for props
 interface GreenProps {
   containerWidth?: string; // Dynamic container width
-  
 }
 
 const Green: React.FC<GreenProps> = ({

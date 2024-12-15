@@ -1,6 +1,6 @@
-import React from "react";
-import Image from "next/image";
-import { footerData } from "../utils/footerData";
+import React from 'react';
+import Image from 'next/image';
+import { footerData } from '../utils/footerData';
 
 const Footer = () => {
   return (
@@ -44,7 +44,7 @@ const Footer = () => {
               copyright 2023 DoraDesign All Rights Reserved
             </p>
             <p className="text-lightGreyGreen text-[12px]">
-              This page uses cookies. See cookies details here{" "}
+              This page uses cookies. See cookies details here{' '}
             </p>
           </div>
         </div>

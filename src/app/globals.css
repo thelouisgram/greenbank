@@ -1,12 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --background: #1C1C1C;
+  --background: #1c1c1c;
   --foreground: #ededed;
   -webkit-tap-highlight-color: transparent;
 }

@@ -1,9 +1,19 @@
-import React from 'react'
-import Image from 'next/image'
+import React from 'react';
+import Image from 'next/image';
+import { motion } from 'motion/react';
 
 const Testimonials = () => {
   return (
-    <section className="flex w-full justify-between gap-8">
+    <motion.section
+      initial={{ x: 100, opacity: 0 }}
+      whileInView={{ x: 0, opacity: 1 }}
+      transition={{
+        ease: 'easeInOut',
+        delay: 0.2,
+        duration: 0.5,
+      }}
+      className="flex w-full justify-between gap-8"
+    >
       <div className="py-12 px-6 bg-darkGreyGreen/20 shadow-lg backdrop-blur-sm rounded-[32px] flex flex-col gap-8">
         <div className="w-[56px] aspect-square rounded-full bg-darkGreyGreen flex justify-center items-center">
           <Image src="/assets/66.png" width={24} height={24} alt="66" />
@@ -57,9 +67,9 @@ const Testimonials = () => {
           <Image src="/assets/66.png" width={24} height={24} alt="66" />
         </div>
         <p className="text-[16px] ">
-          &quot;&#34;I am really satisfied with it. I&#39;m good to go. It really saves
-          me time and effort. It&#39;s is exactly what our business has been
-          lacking.&quot;
+          &quot;&#34;I am really satisfied with it. I&#39;m good to go. It
+          really saves me time and effort. It&#39;s is exactly what our business
+          has been lacking.&quot;
         </p>
         <div className="flex gap-2 items-center">
           <Image
@@ -76,8 +86,8 @@ const Testimonials = () => {
           </div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
-}
+};
 
-export default Testimonials
+export default Testimonials;

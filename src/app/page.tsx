@@ -1,17 +1,16 @@
-"use client";
-import React from "react";
-import Image from "next/image";
-import NavBar from "./components/landingPage/NavBar";
-import Hero from "./components/landingPage/Hero";
-import About from "./components/landingPage/About";
-import Logos from "./components/landingPage/Logos";
-import Features from "./components/landingPage/Features";
-import CreditCard from "./components/landingPage/CreditCard";
-import Testimonials from "./components/landingPage/Testimonials";
-import FAQs from "./components/landingPage/FAQs";
-import CTA from "./components/landingPage/CTA";
-import Footer from "./components/landingPage/Footer";
-import { motion } from "motion/react";
+'use client';
+import React from 'react';
+import Image from 'next/image';
+import NavBar from './components/landingPage/NavBar';
+import Hero from './components/landingPage/Hero';
+import About from './components/landingPage/About';
+import Logos from './components/landingPage/Logos';
+import Features from './components/landingPage/Features';
+import CreditCard from './components/landingPage/CreditCard';
+import Testimonials from './components/landingPage/Testimonials';
+import FAQs from './components/landingPage/FAQs';
+import CTA from './components/landingPage/CTA';
+import Footer from './components/landingPage/Footer';
 
 export default function Page() {
   return (
@@ -47,7 +46,6 @@ export default function Page() {
         <FAQs />
         <CTA />
       </div>
-      <motion.div />
     </div>
   );
 }

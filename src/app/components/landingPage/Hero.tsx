@@ -17,8 +17,18 @@ const Hero = () => {
           }}
           className="text-[48px] sm:text-[56px] font-bold md:leading-[64px] md:-tracking-[2.5%] text-center md:text-left"
         >
-          Discover the Perfect <br className="hidden md;flex" /> Credit Card for
-          You
+          <div>Discover the Perfect </div>
+          <div className='relative'>
+            {' '}
+            Credit Card for You{' '}
+            <Image
+              src="/assets/coil.png"
+              width={360}
+              height={100}
+              className='absolute top-0'
+              alt="coil"
+            />{' '}
+          </div>
         </motion.h1>
         <motion.p
           initial={{ y: 30, opacity: 0 }}

@@ -22,7 +22,7 @@ const Hero = () => {
             {' '}
             Credit Card for You{' '}
             <Image
-              src="/assets/coil.png"
+              src="/assets/coil.svg"
               width={360}
               height={100}
               className='absolute top-0'

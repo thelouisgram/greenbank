@@ -87,7 +87,7 @@ const Hero = () => {
           }}
           className="flex w-full gap-4 h-auto justify-center md:justify-start items-start"
         >
-          <div className='flex w-[136px] relative h-auto'>
+          <div className="flex w-[136px] relative h-auto">
             <div className=" bg-[#3366CC] rounded-full overflow-hidden border-[3px] border-white aspect-square">
               <Image
                 src="/assets/image-1.png"

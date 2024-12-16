@@ -16,8 +16,8 @@ const Green: React.FC<GreenProps> = ({}) => {
           src="/assets/dark-exclude.png"
           width={512}
           height={512}
-          alt="card details"
           className="w-10 h-10 sm:w-16 sm:h-16"
+          alt="card details"
         />
         <Image
           src="/assets/dark-antenna.png"

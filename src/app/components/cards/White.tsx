@@ -13,7 +13,7 @@ const White: React.FC<WhiteProps> = () => {
     >
       <div className="w-full flex justify-between items-center">
         <Image
-          src="/assets/dark-exclude.png"
+          src="/assets/dark-mastercard.png"
           width={512}
           height={512}
           className="w-10 h-10 sm:w-16 sm:h-16"

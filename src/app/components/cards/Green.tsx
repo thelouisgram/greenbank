@@ -7,11 +7,10 @@ interface GreenProps {
 }
 
 const Green: React.FC<GreenProps> = ({
-  containerWidth, // Default width is full
 }) => {
   return (
     <div
-      className={`aspect-[412.27/260.38] text-veryDarkGreyGreen bg-baseGreen rounded-[36px] py-7 px-8 shadow-lg backdrop-blur-md border border-white/50 w-${containerWidth}`}
+      className={`aspect-[412.27/260.38] text-veryDarkGreyGreen bg-baseGreen rounded-[24px] sm:rounded-[36px] py-4 px-4 sm:py-7 sm:px-8 shadow-lg backdrop-blur-md border border-white/50 w-[280px] xs:w-[325px] ss:w-[435px]`}
     >
       <div className="w-full flex justify-between">
         <Image
@@ -28,23 +27,23 @@ const Green: React.FC<GreenProps> = ({
         />
       </div>
 
-      <h6 className={`mt-8 mb-2 text-[16px] `}>Credit Card No.</h6>
+      <h6 className="text-[16px] mt-4 mb-1 sm:mt-8 sm:mb-2">Credit Card No.</h6>
 
-      <div className={`flex gap-4 mb-8`}>
-        <h3 className={`font-bold text-[28px] leading-[28px]`}>1602</h3>
-        <h3 className={`font-bold text-[28px] leading-[28px]`}>0911</h3>
-        <h3 className={`font-bold text-[28px] leading-[28px]`}>2019</h3>
-        <h3 className={`font-bold text-[28px] leading-[28px]`}>2021</h3>
+      <div className="flex gap-4 mb-4 sm:mb-8 font-bold text-[20px] sm:text-[28px] leading-[20px] sm:leading-[28px]">
+        <h3>1602</h3>
+        <h3>0911</h3>
+        <h3>2019</h3>
+        <h3>2021</h3>
       </div>
 
-      <div className="flex gap-16">
+      <div className="flex gap-8 sm:gap-16">
         <div className="flex flex-col gap-3">
-          <h5 className={`text-[12px]`}>Name</h5>
-          <p className={`text-[12px]`}>ARMADA SIX</p>
+          <h5 className="text-[12px] text-[#B9BEBD]">Name</h5>
+          <p className="text-[12px]">ARMADA SIX</p>
         </div>
         <div className="flex flex-col gap-3">
-          <h5 className={`text-[12px]`}>Exp.</h5>
-          <p className={`text-[12px]`}>09/11</p>
+          <h5 className="text-[12px] text-[#B9BEBD]">Exp.</h5>
+          <p className="text-[12px]">09/11</p>
         </div>
       </div>
 
@@ -53,7 +52,7 @@ const Green: React.FC<GreenProps> = ({
         width={58.43}
         height={46.43}
         alt="card chip"
-        className={`absolute bottom-8 right-8`}
+        className="absolute bottom-4 sm:bottom-8 right-4 sm:right-8"
       />
     </div>
   );

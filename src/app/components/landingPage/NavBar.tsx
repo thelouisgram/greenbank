@@ -22,7 +22,7 @@ const NavBar = () => {
         alt="logo"
         priority
       />
-      <ul className="flex gap-8 shadow-sm text-white text-[16px]">
+      <ul className="gap-8 shadow-sm text-white text-[16px] hidden md:flex">
         <li>Why Us</li>
         <li>Services</li>
         <li>Our Process</li>

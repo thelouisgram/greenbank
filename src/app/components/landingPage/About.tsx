@@ -11,80 +11,47 @@ const About = () => {
         backdropFilter: 'blur(4px)',
       }} // End state
       transition={{
-        duration: 1,
-        ease: 'easeInOut',
+        type: 'spring',
+        stiffness: 100,
+        damping: 20,
+        duration: 1.2,
       }}
-      className="h-[216px] w-full flex justify-center items-center rounded-[32px] shadow-lg bg-darkGreyGreen/20"
+      className="py-6 xs:py-8 sm:py-16 w-full flex justify-center items-center rounded-[18px] sm:rounded-[24px] md:rounded-[32px] shadow-lg bg-darkGreyGreen/20 px-2 xs:px-3 sm:px-12"
     >
-      <motion.div
-        initial={{ y: 20, opacity: 0 }}
-        whileInView={{ y: 0, opacity: 1 }}
-        viewport={{ once: true }}
-        transition={{
-          ease: 'easeInOut',
-          duration: 0.2,
-        }}
-        className="w-[278px] flex flex-col gap-2 items-center"
-      >
-        <h2 className="font-bold text-white text-[48px] leading-[56px] tracking-[-3.2px]">
-          16y
-        </h2>
-        <p className="text-baseGreen font-medium text-[16px]">Experience</p>
-      </motion.div>
-      <motion.div
-        initial={{ y: 20, opacity: 0 }}
-        whileInView={{ y: 0, opacity: 1 }}
-        viewport={{ once: true }}
-        transition={{
-          ease: 'easeInOut',
-          duration: 0.2,
-          delay: 0.2,
-        }}
-        className="w-[278px] flex flex-col gap-2 items-center"
-      >
-        <h2 className="font-bold text-white text-[48px] leading-[56px] tracking-[-3.2px]">
-          250+
-        </h2>
-        <p className="text-baseGreen font-medium text-[16px]">
-          Merchant Partner
-        </p>
-      </motion.div>
-      <motion.div
-        initial={{ y: 20, opacity: 0 }}
-        whileInView={{ y: 0, opacity: 1 }}
-        viewport={{ once: true }}
-        transition={{
-          ease: 'easeInOut',
-          duration: 0.2,
-          delay: 0.4,
-        }}
-        className="w-[278px] flex flex-col gap-2 items-center"
-      >
-        <h2 className="font-bold text-white text-[48px] leading-[56px] tracking-[-3.2px]">
-          18+
-        </h2>
-        <p className="text-baseGreen font-medium text-[16px]">
-          Years Experience
-        </p>
-      </motion.div>
-      <motion.div
-        initial={{ y: 20, opacity: 0 }}
-        whileInView={{ y: 0, opacity: 1 }}
-        viewport={{ once: true }}
-        transition={{
-          ease: 'easeInOut',
-          duration: 0.2,
-          delay: 0.6,
-        }}
-        className="w-[278px] flex flex-col gap-2 items-center"
-      >
-        <h2 className="font-bold text-white text-[48px] leading-[56px] tracking-[-3.2px]">
-          10.2k+
-        </h2>
-        <p className="text-baseGreen font-medium text-[16px]">
-          Worldwide Clients
-        </p>
-      </motion.div>
+      <div className="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-4 gap-y-6 gap-x-4 sm:gap-y-8 sm:gap-x-12 w-full max-w-4xl relative">
+        {[
+          { label: 'Experience', value: '16y', delay: 0 },
+          { label: 'Merchant Partner', value: '250+', delay: 0.3 },
+          { label: 'Years Experience', value: '18+', delay: 0.6 },
+          { label: 'Worldwide Clients', value: '10.2k+', delay: 0.9 },
+        ].map((stat, index) => (
+          <React.Fragment key={index}>
+            <motion.div
+              initial={{ y: 30, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{
+                ease: 'easeInOut',
+                duration: 0.6,
+                delay: stat.delay,
+              }}
+              className="flex flex-col gap-1 sm:gap-2 items-center text-center"
+            >
+              <h2 className="font-bold text-white text-[24px] md:leading-[56px] md:tracking-[-3.2px] xs:text-[30px] sm:text-[48px]">
+                {stat.value}
+              </h2>
+              <p className="text-baseGreen font-medium text-[10px] sm:text-[16px]">
+                {stat.label}
+              </p>
+            </motion.div>
+
+            {/* Separator for the second column */}
+            {index % 2 === 0 && (
+              <div className="hidden xs:block h-full w-px bg-white/20 mx-auto md:hidden"></div>
+            )}
+          </React.Fragment>
+        ))}
+      </div>
     </motion.section>
   );
 };

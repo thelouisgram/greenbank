@@ -5,30 +5,31 @@ import { motion } from 'motion/react';
 
 const Hero = () => {
   return (
-    <section className="flex w-full justify-between md:min-h-[540px]">
-      <div className=" flex flex-col gap-8 w-[1/2]">
+    <section className="flex w-full flex-col md:flex-row gap-16 md:gap-0 justify-between md:min-h-[540px]">
+      <div className="flex flex-col w-full gap-8 items-center md:items-start ">
         <motion.h1
-          initial={{ y: 20, opacity: 0 }}
+          initial={{ y: 30, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           viewport={{ once: true }}
           transition={{
             ease: 'easeInOut',
-            duration: 0.25,
+            duration: 0.8,
           }}
-          className="text-[56px] font-bold leading-[64px] -tracking-[2.5%]"
+          className="text-[48px] sm:text-[56px] font-bold md:leading-[64px] md:-tracking-[2.5%] text-center md:text-left"
         >
-          Discover the Perfect <br /> Credit Card for You
+          Discover the Perfect <br className="hidden md;flex" /> Credit Card for
+          You
         </motion.h1>
         <motion.p
-          initial={{ y: 20, opacity: 0 }}
+          initial={{ y: 30, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           viewport={{ once: true }}
           transition={{
             ease: 'easeInOut',
-            duration: 0.25,
-            delay: 0.25,
+            duration: 0.8,
+            delay: 0.2,
           }}
-          className="w-[498px] text-[18px] leading-6 "
+          className="ip:w-[498px] text-[16px] sm:text-[18px] leading-6 text-center md:text-left"
         >
           Discover the power of our secure and rewarding credit cards. Explore
           our range of credit cards and take control of your finances today.
@@ -45,23 +46,24 @@ const Hero = () => {
           viewport={{ once: true }}
           transition={{
             ease: 'easeInOut',
-            duration: 0.375,
+            duration: 0.6,
           }}
           className="bg-baseGreen rounded-[64px] h-[56px] px-8 py-4 text-[16px] flex flex-col items-center justify-center overflow-hidden"
         >
           <motion.div
             initial={{
-              y: 20,
+              y: 30,
               opacity: 0,
             }}
             whileInView={{
               y: 0,
               opacity: 1,
             }}
+            viewport={{ once: true }}
             transition={{
               ease: 'easeInOut',
-              duration: 0.375,
-              delay: 0.375, // Wait for the button to fully "open" before showing content
+              duration: 0.6,
+              delay: 0.4, // Wait for the button to fully "open" before showing content
             }}
             className="flex flex-row gap-4 items-center"
           >
@@ -75,15 +77,15 @@ const Hero = () => {
           </motion.div>
         </motion.button>
         <motion.div
-          initial={{ y: 20, opacity: 0 }}
+          initial={{ y: 30, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           viewport={{ once: true }}
           transition={{
             ease: 'easeInOut',
-            duration: 0.25,
+            duration: 0.8,
             delay: 0.5,
           }}
-          className="flex w-full gap-4 h-auto"
+          className="flex w-full gap-4 h-auto justify-center md:justify-start "
         >
           <Image
             src="/assets/people.png"
@@ -101,17 +103,16 @@ const Hero = () => {
           </div>
         </motion.div>
       </div>
-      <div className="relative h-auto w-[1/2]">
+      <div className="relative h-auto w-full flex justify-center md:justify-end">
         <div className="relative">
           <motion.div
-            initial={{ x: 40, opacity: 0 }}
+            initial={{ x: 50, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
             viewport={{ once: true }}
             transition={{
               ease: 'easeInOut',
-              duration: 0.375,
+              duration: 0.7,
             }}
-            className="w-[500px] pt-10"
           >
             <motion.div
               initial={{ rotate: 0 }}
@@ -119,15 +120,32 @@ const Hero = () => {
               viewport={{ once: true }}
               transition={{
                 ease: 'easeInOut',
-                delay: 0.375,
-                duration: 0.375,
+                delay: 0.3,
+                duration: 0.6,
               }}
-              className="w-[500px] pt-10"
+              className="pl-4 xs:pl-0 pt-10"
             >
-              <Transparent containerWidth="500px" cardType="hero" />
+              <Transparent cardType="hero" />
             </motion.div>
           </motion.div>
         </div>
+        <motion.div
+          initial={{
+            width: '0px',
+            height: '0px',
+            borderRadius: '50%',
+          }}
+          animate={{
+            width: '500px',
+            height: '500px',
+            right: '-225px',
+          }}
+          transition={{
+            duration: 0.8,
+            ease: 'easeInOut',
+          }}
+          className="bg-baseGreen absolute md:top-0 -top-20 right-[125px] md:-right-[225px] z-[-1] hidden sm:flex"
+        />
         <motion.div
           initial={{
             width: '0px',
@@ -137,14 +155,14 @@ const Hero = () => {
             right: '-225px',
           }}
           animate={{
-            width: '500px',
-            height: '500px',
+            width: '350px',
+            height: '350px',
           }}
           transition={{
-            duration: 0.75,
+            duration: 0.8,
             ease: 'easeInOut',
           }}
-          className="bg-baseGreen absolute top-0 -right-[225px] z-[-1]"
+          className="bg-baseGreen absolute top-0 -right-[225px] z-[-1] md:hidden"
         />
       </div>
     </section>

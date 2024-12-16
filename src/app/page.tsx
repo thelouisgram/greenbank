@@ -11,15 +11,24 @@ import Testimonials from './components/landingPage/Testimonials';
 import FAQs from './components/landingPage/FAQs';
 import CTA from './components/landingPage/CTA';
 import Footer from './components/landingPage/Footer';
+import { motion } from 'motion/react';
 
 export default function Page() {
   return (
     <div className="w-full h-full overflow-hidden relative">
-      <Footer />
       <div className="w-full flex justify-center h-full relative container">
         <div className="z-[-1] absolute w-[800px] h-[800px] rounded-full bg-gradient-to-l from-[#2BB32A] to-transparent blur-3xl opacity-40 -top-[400px]"></div>
       </div>
-      <div className="lg:container overflow-hidden">
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{
+          ease: 'easeInOut',
+          duration: 0.1,
+        }}
+        className="lg:container overflow-hidden w-full h-full"
+      >
         <Image
           src="/assets/dora.png"
           width={1446}
@@ -34,8 +43,8 @@ export default function Page() {
           alt="tracing"
           className="absolute z-[-3] top-36"
         />
-      </div>
-      <div className=" container font-jakarta pt-[32px] lg:px-[100px] z-[2] flex gap-[128px] flex-col text-white">
+      </motion.div>
+      <div className="px-2 sm:px-4 md:px-0 container font-jakarta pt-[32px] lg:px-[100px] z-[2] flex gap-[100px] sm:gap-[128px] flex-col text-white">
         <NavBar />
         <Hero />
         <About />
@@ -46,6 +55,7 @@ export default function Page() {
         <FAQs />
         <CTA />
       </div>
+      <Footer />
     </div>
   );
 }

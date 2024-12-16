@@ -53,9 +53,6 @@ const FAQs = () => {
 
   return (
     <div className="w-full h-full">
-      <div className="w-full container relative flex justify-center">
-        <div className="z-[-1] absolute w-[800px] h-[1000px] rounded-full bg-gradient-to-l from-[#2BB32A] to-transparent blur-3xl opacity-40 -top-40 -left-[30%]"></div>
-      </div>
       <div className="px-2 sm:px-4 lg:px-[110px]">
         <h2 className="text-[32px] lg:text-[40px] font-bold text-center mb-16">
           FAQs

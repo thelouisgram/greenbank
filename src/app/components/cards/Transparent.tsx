@@ -94,7 +94,7 @@ const Transparent: React.FC<TransparentProps> = ({ cardType }) => {
         className={`absolute  w-10 h-10 sm:w-16 sm:h-16 ${
           cardType === 'hero'
             ? 'bottom-5 sm:bottom-10 right-5 sm:right-10'
-            : 'right- sm:right-8 bottom-2 sm:bottom-4'
+            : 'right-4 sm:right-8 bottom-2 sm:bottom-4'
         }`}
       />
     </div>

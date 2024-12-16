@@ -10,9 +10,6 @@ const CreditCard = () => {
 
   return (
     <section className="w-full h-full">
-      <div className="w-full container relative flex justify-center">
-        <div className="z-[-4] absolute w-[800px] h-[1000px] rounded-full bg-gradient-to-r from-[#2BB32A] to-transparent blur-3xl opacity-40 -top-40 -right-[35%]"></div>
-      </div>
       <div className="w-full h-full flex flex-col md:flex-row gap-12 md:gap-0 justify-between items-center mb-[100px] ip:mb-[128px]">
         <div className="h-full w-full flex flex-col gap-6 items-center text-center md:text-start md:items-start">
           <div className="md:w-[604px] text-[30px] sm:text-[40px] font-bold">

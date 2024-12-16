@@ -44,6 +44,12 @@ export default function Page() {
           className="absolute z-[-3] top-36"
         />
       </motion.div>
+      <div className="w-full container relative">
+        <div className="z-[-4] absolute w-[800px] h-[1000px] top-[1500px] rounded-full bg-gradient-to-r from-[#2BB32A] to-transparent blur-3xl opacity-40 -right-[35%]"></div>
+      </div>
+      <div className="w-full container relative">
+        <div className="hidden md:flex z-[-4] absolute w-[800px] h-[1000px] rounded-full bg-gradient-to-l top-[3500px] from-[#2BB32A] to-transparent blur-3xl opacity-40 -left-[30%]"></div>
+      </div>
       <div className="px-2 sm:px-4 md:px-0 container font-jakarta pt-[32px] lg:px-[100px] z-[2] flex gap-[100px] sm:gap-[128px] flex-col text-white">
         <NavBar />
         <Hero />

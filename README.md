@@ -2,6 +2,9 @@
 
 A pixel-perfect and visually dynamic landing page for Greenbank, showcasing clean design, smooth animations, and responsiveness.
 
+<img src="https://github.com/yourusername/greenbank/blob/main/public/assets/screenshots/landing-page.png" alt="Greenbank Landing Page Screenshot">
+
+
 ## Overview
 
 ### Features

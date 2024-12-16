@@ -75,14 +75,14 @@ const Features = () => {
                 rotate: 5,
                 transition: { type: 'spring', stiffness: 150, damping: 10 },
               }}
-              className="bg-darkGreyGreen flex justify-center items-center rounded-[18px] mb:rounded-[24px] w-16 h-16 aspect-square"
+              className="bg-darkGreyGreen flex justify-center items-center rounded-[18px] mb:rounded-[24px] w-10 h-10 sm:w-16 sm:h-16 aspect-square"
             >
               <Image
                 src={feature.icon}
-                width={32}
-                height={32}
+                width={512}
+                height={512}
                 alt={`${feature.title} icon`}
-                className="w-8 h-8"
+                className="w-6 h-6 sm:w-8 sm:h-8"
               />
             </motion.div>
             <div>

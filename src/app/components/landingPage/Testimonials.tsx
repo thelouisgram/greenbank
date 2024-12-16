@@ -33,12 +33,15 @@ const Testimonials = () => {
           advice on how we can go about refining our service offerings.&quot;
         </p>
         <div className="flex gap-2 items-center">
-          <Image
-            src="/assets/Ellipse.png"
-            width={48}
-            height={48}
-            alt="ellipse"
-          />
+          <div className=" bg-[#3366CC] rounded-full overflow-hidden border-[3px] border-white">
+            <Image
+              src="/assets/image-1.png"
+              width={128}
+              height={128}
+              alt="ellipse"
+              className="w-12 h-12"
+            />
+          </div>
           <div>
             <h3 className="text-[14px] sm:text-[16px] lg:text-[16px] font-medium">
               Hadid Khan
@@ -69,12 +72,15 @@ const Testimonials = () => {
           what I&#39;ve been looking for, definitely worth the investment.&quot;
         </p>
         <div className="flex gap-2 items-center">
-          <Image
-            src="/assets/Ellipse (1).png"
-            width={48}
-            height={48}
-            alt="ellipse"
-          />
+          <div className=" bg-[#E6B800] rounded-full overflow-hidden border-[3px] border-white">
+            <Image
+              src="/assets/image-2.png"
+              width={128}
+              height={128}
+              alt="ellipse"
+              className="w-12 h-12"
+            />
+          </div>
           <div>
             <h3 className="text-[14px] sm:text-[16px] lg:text-[16px] font-medium">
               Wade Warren
@@ -106,12 +112,15 @@ const Testimonials = () => {
           lacking.&quot;
         </p>
         <div className="flex gap-2 items-center">
-          <Image
-            src="/assets/Ellipse (2).png"
-            width={48}
-            height={48}
-            alt="ellipse"
-          />
+          <div className=" bg-[#FF7F50] rounded-full overflow-hidden border-[3px] border-white">
+            <Image
+              src="/assets/image-3.png"
+              width={128}
+              height={128}
+              alt="ellipse"
+              className="w-12 h-12"
+            />
+          </div>
           <div>
             <h3 className="text-[14px] sm:text-[16px] lg:text-[16px] font-medium">
               Jenny Wilson

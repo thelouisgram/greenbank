@@ -37,17 +37,20 @@ const About = () => {
               }}
               className="flex flex-col gap-1 sm:gap-2 items-center text-center"
             >
-              <h2 className="font-bold text-white text-[24px] md:leading-[56px] md:tracking-[-3.2px] xs:text-[30px] sm:text-[48px]">
+              <h2 className="font-bold text-white text-[32px] md:leading-[56px] md:tracking-[-3.2px] xs:text-[30px] sm:text-[48px]">
                 {stat.value}
               </h2>
-              <p className="text-baseGreen font-medium text-[10px] sm:text-[16px]">
+              <p className="text-baseGreen font-medium text-[14px] sm:text-[16px]">
                 {stat.label}
               </p>
             </motion.div>
 
-            {/* Separator for the second column */}
-            {index % 2 === 0 && (
-              <div className="hidden xs:block h-full w-px bg-white/20 mx-auto md:hidden"></div>
+            {/* Separator line design */}
+            {(index % 2 === 0 || index % 2 === 1) && index !== 3 && (
+              <div className="block xs:hidden col-span-1 w-full h-px bg-gradient-to-r from-white/10 via-white/40 to-white/10 my-4"></div>
+            )}
+            {index % 2 === 0 && index !== 3 && (
+              <div className="hidden xs:block md:hidden h-full w-px bg-gradient-to-b from-white/10 via-white/40 to-white/10 mx-auto"></div>
             )}
           </React.Fragment>
         ))}

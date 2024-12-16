@@ -122,7 +122,7 @@ const CreditCard = () => {
             duration: 0.6,
             staggerChildren: 0.2,
           }}
-          className="relative md:pl-8 h-[400px] sm:h-[500px]"
+          className="relative md:pl-8 h-[400px] sm:h-[500px] text-left"
         >
           <motion.div className="h-auto z-[3]">
             <Transparent />

@@ -85,15 +85,37 @@ const Hero = () => {
             duration: 0.8,
             delay: 0.5,
           }}
-          className="flex w-full gap-4 h-auto justify-center md:justify-start "
+          className="flex w-full gap-4 h-auto justify-center md:justify-start items-start"
         >
-          <Image
-            src="/assets/people.png"
-            alt="people"
-            width={128}
-            height={48}
-            className="h-[48px] w-[128px]"
-          />
+          <div className='flex w-[136px] relative h-auto'>
+            <div className=" bg-[#3366CC] rounded-full overflow-hidden border-[3px] border-white aspect-square">
+              <Image
+                src="/assets/image-1.png"
+                width={128}
+                height={128}
+                alt="ellipse"
+                className="w-12 h-12"
+              />
+            </div>
+            <div className=" bg-[#E6B800] left-10 top-0 absolute rounded-full overflow-hidden border-[3px] border-white aspect-square">
+              <Image
+                src="/assets/image-2.png"
+                width={128}
+                height={128}
+                alt="ellipse"
+                className="w-12 h-12"
+              />
+            </div>
+            <div className=" bg-[#FF7F50] left-20 top-0 absolute rounded-full overflow-hidden border-[3px] border-white aspect-square">
+              <Image
+                src="/assets/image-3.png"
+                width={128}
+                height={128}
+                alt="ellipse"
+                className="w-12 h-12"
+              />
+            </div>
+          </div>
           <div className="flex flex-col">
             <h3 className="white font-bold text-[16px]">10.2k+</h3>
             <p className="text-[12px] text-lightGreyGreen leading-[16px]">

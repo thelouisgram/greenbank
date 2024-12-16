@@ -61,7 +61,7 @@ const Features = () => {
       </motion.h3>
       <motion.div
         variants={containerVariants}
-        className="flex justify-evenly items-center gap-8 flex-wrap"
+        className="flex md:justify-evenly items-start gap-8 flex-wrap"
       >
         {featuresData.map((feature, index) => (
           <motion.div

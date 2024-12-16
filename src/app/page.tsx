@@ -17,7 +17,7 @@ export default function Page() {
   return (
     <div className="w-full h-full overflow-hidden relative">
       <div className="w-full flex justify-center h-full relative container">
-        <div className="z-[-1] absolute w-[800px] h-[800px] rounded-full bg-gradient-to-l from-[#2BB32A] to-transparent blur-3xl opacity-40 -top-[400px]"></div>
+        <div className="z-[-1] absolute w-[700px] h-[700px] rounded-full bg-gradient-to-br from-[#2BB32A] to-transparent blur-3xl opacity-40 -top-[350px] right-0"></div>
       </div>
       <motion.div
         initial={{ opacity: 0 }}
@@ -44,11 +44,13 @@ export default function Page() {
           className="absolute z-[-3] top-36"
         />
       </motion.div>
+      {/* Original gradient positioned at 1500px from the top */}
       <div className="w-full container relative">
-        <div className="z-[-4] absolute w-[800px] h-[1000px] top-[1500px] rounded-full bg-gradient-to-r from-[#2BB32A] to-transparent blur-3xl opacity-40 -right-[35%]"></div>
+        <div className="z-[-4] absolute w-[900px] h-[900px] top-[1500px] rounded-full bg-gradient-to-r from-[#2BB32A] to-transparent blur-3xl opacity-40 right-0 md:-right-[30%]"></div>
       </div>
+      {/* Original gradient positioned at 3500px from the top */}
       <div className="w-full container relative">
-        <div className="hidden md:flex z-[-4] absolute w-[800px] h-[1000px] rounded-full bg-gradient-to-l top-[3500px] from-[#2BB32A] to-transparent blur-3xl opacity-40 -left-[30%]"></div>
+        <div className="z-[-4] absolute w-[900px] h-[900px] top-[3500px] rounded-full bg-gradient-to-l from-[#2BB32A] to-transparent blur-3xl opacity-40 left-0 md:-left-[25%]"></div>
       </div>
       <div className="px-2 sm:px-4 md:px-0 container font-jakarta pt-[32px] lg:px-[100px] z-[2] flex gap-[100px] sm:gap-[128px] flex-col text-white">
         <NavBar />

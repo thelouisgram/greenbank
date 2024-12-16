@@ -12,18 +12,19 @@ const Testimonials = () => {
         delay: 0.2,
         duration: 0.5,
       }}
-      className="flex flex-wrap justify-center md:justify-between gap-8 px-4 sm:px-8 lg:px-16 "
+      className="flex flex-wrap w-full ip:grid ip:grid-cols-3 justify-center md:justify-between gap-8 px-4 sm:px-8 lg:px-16 "
     >
       {/* Testimonial 1 */}
       <motion.div
         initial={{ opacity: 0, x: 100 }}
         whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }}
         transition={{
           ease: 'easeInOut',
           delay: 0.2,
           duration: 0.5,
         }}
-        className="w-full sm:w-[48%] lg:w-[30%] py-12 px-6 bg-darkGreyGreen/20 shadow-lg backdrop-blur-sm rounded-[32px] flex flex-col gap-8"
+        className="py-12 px-6 bg-darkGreyGreen/20 shadow-lg backdrop-blur-sm rounded-[32px] flex flex-col gap-8"
       >
         <div className="w-[56px] aspect-square rounded-full bg-darkGreyGreen flex justify-center items-center">
           <Image src="/assets/66.png" width={24} height={24} alt="66" />
@@ -57,12 +58,13 @@ const Testimonials = () => {
       <motion.div
         initial={{ opacity: 0, x: 100 }}
         whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }}
         transition={{
           ease: 'easeInOut',
           delay: 0.4,
           duration: 0.5,
         }}
-        className="w-full sm:w-[48%] lg:w-[30%] py-12 px-6 bg-darkGreyGreen/20 shadow-lg backdrop-blur-sm rounded-[32px] flex flex-col gap-8"
+        className="py-12 px-6 bg-darkGreyGreen/20 shadow-lg backdrop-blur-sm rounded-[32px] flex flex-col gap-8"
       >
         <div className="w-[56px] aspect-square rounded-full bg-darkGreyGreen flex justify-center items-center">
           <Image src="/assets/66.png" width={24} height={24} alt="66" />
@@ -96,12 +98,13 @@ const Testimonials = () => {
       <motion.div
         initial={{ opacity: 0, x: 100 }}
         whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }}
         transition={{
           ease: 'easeInOut',
           delay: 0.6,
           duration: 0.5,
         }}
-        className="w-full sm:w-[48%] lg:w-[30%] py-12 px-6 bg-darkGreyGreen/20 shadow-lg backdrop-blur-sm rounded-[32px] flex flex-col gap-8"
+        className="py-12 px-6 bg-darkGreyGreen/20 shadow-lg backdrop-blur-sm rounded-[32px] flex flex-col gap-8"
       >
         <div className="w-[56px] aspect-square rounded-full bg-darkGreyGreen flex justify-center items-center">
           <Image src="/assets/66.png" width={24} height={24} alt="66" />

@@ -23,6 +23,6 @@ A pixel-perfect and visually dynamic landing page for Greenbank, showcasing clea
 
 ## Author
 
-- **GitHub**: [@yourusername](https://github.com/thelouisgram)
+- **GitHub**: [@thelouisgram](https://github.com/thelouisgram)
 
 ---

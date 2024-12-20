@@ -52,7 +52,7 @@ const CreditCard = () => {
             }}
             transition={{
               ease: 'easeInOut',
-              duration: 0.6,
+              duration: 0.5,
             }}
             className="bg-baseGreen rounded-[64px] w-[233.5px] px-8 py-4 text-[16px] flex justify-center h-[56px] items-center overflow-hidden"
           >
@@ -103,7 +103,7 @@ const CreditCard = () => {
           <motion.div
             initial={{ y: -245, skewX: -15, opacity: 0 }}
             whileInView={{ y: 0, skewX: -15, opacity: 1 }}
-            transition={{ duration: 0.7, ease: 'easeInOut', delay: 0.7 }}
+            transition={{ duration: 0.7, ease: 'easeInOut', delay: 0.5 }}
             className="h-auto transform absolute z-[-3] top-[245px] -right-[14px] md:-right-[28px]"
           >
             <White />

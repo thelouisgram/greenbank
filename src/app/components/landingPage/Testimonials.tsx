@@ -21,7 +21,7 @@ const Testimonials = () => {
         viewport={{ once: true }}
         transition={{
           ease: 'easeInOut',
-          delay: 0.2,
+          delay: 0.4,
           duration: 0.5,
         }}
         className="py-12 px-6 bg-darkGreyGreen/20 shadow-lg backdrop-blur-sm rounded-[32px] flex flex-col gap-8"
@@ -61,7 +61,7 @@ const Testimonials = () => {
         viewport={{ once: true }}
         transition={{
           ease: 'easeInOut',
-          delay: 0.4,
+          delay: 0.6,
           duration: 0.5,
         }}
         className="py-12 px-6 bg-darkGreyGreen/20 shadow-lg backdrop-blur-sm rounded-[32px] flex flex-col gap-8"
@@ -101,7 +101,7 @@ const Testimonials = () => {
         viewport={{ once: true }}
         transition={{
           ease: 'easeInOut',
-          delay: 0.6,
+          delay: 0.8,
           duration: 0.5,
         }}
         className="py-12 px-6 bg-darkGreyGreen/20 shadow-lg backdrop-blur-sm rounded-[32px] flex flex-col gap-8"

@@ -13,19 +13,19 @@ const Hero = () => {
           viewport={{ once: true }}
           transition={{
             ease: 'easeInOut',
-            duration: 0.8,
+            duration: 1.2,
           }}
           className="text-[48px] sm:text-[56px] font-bold md:leading-[64px] md:-tracking-[2.5%] text-center md:text-left"
         >
           <div>Discover the Perfect </div>
-          <div className='relative'>
+          <div className="relative">
             {' '}
             Credit Card for You{' '}
             <Image
               src="/assets/coil.svg"
               width={360}
               height={100}
-              className='absolute top-0'
+              className="absolute top-0"
               alt="coil"
             />{' '}
           </div>
@@ -36,8 +36,8 @@ const Hero = () => {
           viewport={{ once: true }}
           transition={{
             ease: 'easeInOut',
-            duration: 0.8,
-            delay: 0.2,
+            duration: 1.2,
+            delay: 0.4,
           }}
           className="ip:w-[498px] text-[16px] sm:text-[18px] leading-6 text-center md:text-left"
         >
@@ -56,7 +56,7 @@ const Hero = () => {
           viewport={{ once: true }}
           transition={{
             ease: 'easeInOut',
-            duration: 0.6,
+            duration: 1.0,
           }}
           className="bg-baseGreen rounded-[64px] h-[56px] px-8 py-4 text-[16px] flex flex-col items-center justify-center overflow-hidden"
         >
@@ -72,8 +72,8 @@ const Hero = () => {
             viewport={{ once: true }}
             transition={{
               ease: 'easeInOut',
-              duration: 0.6,
-              delay: 0.4, // Wait for the button to fully "open" before showing content
+              duration: 1.0,
+              delay: 0.6, // Wait for the button to fully "open" before showing content
             }}
             className="flex flex-row gap-4 items-center"
           >
@@ -92,8 +92,8 @@ const Hero = () => {
           viewport={{ once: true }}
           transition={{
             ease: 'easeInOut',
-            duration: 0.8,
-            delay: 0.5,
+            duration: 1.2,
+            delay: 0.8,
           }}
           className="flex w-full gap-4 h-auto justify-center md:justify-start items-start"
         >
@@ -143,7 +143,7 @@ const Hero = () => {
             viewport={{ once: true }}
             transition={{
               ease: 'easeInOut',
-              duration: 0.7,
+              duration: 1.1,
             }}
           >
             <motion.div
@@ -152,8 +152,8 @@ const Hero = () => {
               viewport={{ once: true }}
               transition={{
                 ease: 'easeInOut',
-                delay: 0.3,
-                duration: 0.6,
+                delay: 0.5,
+                duration: 1.0,
               }}
               className="pl-4 xs:pl-0 pt-10"
             >
@@ -173,7 +173,7 @@ const Hero = () => {
             right: '-225px',
           }}
           transition={{
-            duration: 0.8,
+            duration: 1.0,
             ease: 'easeInOut',
           }}
           className="bg-baseGreen absolute md:top-0 -top-20 right-[125px] md:-right-[225px] z-[-1] hidden sm:flex"
@@ -191,7 +191,7 @@ const Hero = () => {
             height: '350px',
           }}
           transition={{
-            duration: 0.8,
+            duration: 1.0,
             ease: 'easeInOut',
           }}
           className="bg-baseGreen absolute top-0 -right-[225px] z-[-1] md:hidden"
